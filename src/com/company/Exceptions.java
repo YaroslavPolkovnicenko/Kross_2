@@ -1,0 +1,9 @@
+package com.company;
+
+public class Exceptions {
+
+    public static void checkString (String str) throws Exception {
+        if(!str.matches("^\\D*$")) throw new Exception("There are numbers '" + str + "'");
+    }
+
+}
